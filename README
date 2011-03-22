@@ -1,1 +1,4 @@
-Invoic.it
+#Invoic
+Invoic is a free, open source, billing and time tracking software aimed for freelancers on a self hosted envoiroment.
+
+Invoic is built on top of the fuel framework and all credit goes where it is due to those awesome guys who developed this awesome framework.
