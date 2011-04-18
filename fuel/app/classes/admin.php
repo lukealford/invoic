@@ -17,10 +17,10 @@ class Admin extends Controller_Template {
 	{
 		parent::before();
 		static::$auth = Auth::instance();
-		$data['language'] = (isset($_POST['language'])) ? $_POST['language'] : self::language();
+		$data['language'] = ( isset($_POST['language']) ) ? $_POST['language'] : self::language();
 		Config::set('language', $data['language']);	
 		Lang::load('general');
-		if(!static::$auth->perform_check())
+		if ( ! static::$auth->perform_check())
 		{
 			static::$data['redirect'] = Uri::current();
 			self::login();
@@ -29,9 +29,9 @@ class Admin extends Controller_Template {
 	
 	public function login()
 	{
-		if($_POST)
+		if ($_POST)
 		{
-			if(static::$auth->login($_POST['username'], $_POST['password']))
+			if (static::$auth->login($_POST['username'], $_POST['password']))
 			{
 				Session::set_flash('notice', Lang::line('auth.authenticate.success'));
 				Response::redirect(static::$data['redirect']);
@@ -53,7 +53,7 @@ class Admin extends Controller_Template {
 	public function after()
 	{
 		parent::after();
-		if(!static::$auth->perform_check() && Uri::segment(2) !== 'logout')
+		if ( ! static::$auth->perform_check() && Uri::segment(2) !== 'logout')
 		{
 			$this->template->content = View::factory('general/form');
 		}
@@ -63,9 +63,9 @@ class Admin extends Controller_Template {
 	{
 		$langs = Agent::languages();
 		$accepted = array();
-		foreach($langs as $lang)
+		foreach ($langs as $lang)
 		{
-			if(strlen($lang) == 2)
+			if (strlen($lang) == 2)
 			{
 				$accepted[] = $lang;
 			}
