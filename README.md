@@ -1,7 +1,9 @@
 #Invoic.it
 
+The Official Invoic.it Development Repository.
+
 * [Website](http://invoic.it/)
-* Version: 
+* Version: 0.0.1-alpha
 
 ## Description
 
@@ -11,8 +13,12 @@ Invoic is built on top of the fuel framework and all credit goes where it is due
 
 ##Development Team
 
-Luke Alford - Founder & Lead Desginer
-Alfredo Rivera - Lead Developer
-Abdelrahman Mahmoud - Developer & Advisor
-Sergio Diaz - Developer
-Kris Triplett - Front-end Developer
+Luke Alford - Founder & Lead Desginer.
+
+Alfredo Rivera - Lead Developer.
+
+Abdelrahman Mahmoud - Developer & Advisor.
+
+Sergio Diaz - Developer.
+
+Kris Triplett - Front-end Developer.
